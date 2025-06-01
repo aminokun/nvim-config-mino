@@ -33,6 +33,11 @@ keymap("n", "<leader>j", ":resize -2<CR>", opts)
 keymap("n", "<leader>k", ":vertical resize -2<CR>", opts)
 keymap("n", "<leader>l", ":vertical resize +2<CR>", opts)
 
+-- Custom mappings
+keymap("n", "<leader>0", ":Lazy<CR>", opts)
+keymap("n", "<leader><ESC>", ":q<CR>", opts)
+
+
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
