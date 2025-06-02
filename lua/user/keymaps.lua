@@ -20,27 +20,30 @@ vim.g.maplocalleader = " "
 
 -- Normal --
 -- Better window navigation
-keymap("n", "<C-h>", "<C-w>h", opts)
-keymap("n", "<C-j>", "<C-w>j", opts)
-keymap("n", "<C-k>", "<C-w>k", opts)
-keymap("n", "<C-l>", "<C-w>l", opts)
+keymap("n", "<S-h>", "<C-w>h", opts)
+keymap("n", "<S-j>", "<C-w>j", opts)
+keymap("n", "<S-k>", "<C-w>k", opts)
+keymap("n", "<S-l>", "<C-w>l", opts)
 
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+-- keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 
 -- Resize with arrows
-keymap("n", "<leader>h", ":resize +2<CR>", opts)
-keymap("n", "<leader>j", ":resize -2<CR>", opts)
-keymap("n", "<leader>k", ":vertical resize -2<CR>", opts)
+keymap("n", "<leader>j", ":resize +2<CR>", opts)
+keymap("n", "<leader>k", ":resize -2<CR>", opts)
+keymap("n", "<leader>h", ":vertical resize -2<CR>", opts)
 keymap("n", "<leader>l", ":vertical resize +2<CR>", opts)
 
 -- Custom mappings
 keymap("n", "<leader>0", ":Lazy<CR>", opts)
 keymap("n", "<leader><ESC>", ":q<CR>", opts)
+keymap("n", "<leader>w", ":wa<CR>", opts)
 
+keymap("n", "<leader>c", ":split<CR>", opts)
+keymap("n", "<leader>v", ":vsplit<CR>", opts)
 
 -- Navigate buffers
-keymap("n", "<S-l>", ":bnext<CR>", opts)
-keymap("n", "<S-h>", ":bprevious<CR>", opts)
+keymap("n", "<C-l>", ":bnext<CR>", opts)
+keymap("n", "<C-h>", ":bprevious<CR>", opts)
 
 -- Insert --
 -- Press jk fast to enter
