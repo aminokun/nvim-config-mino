@@ -1,11 +1,13 @@
-return {
--- Kanagawa colorscheme
+local M = {
   "rebelot/kanagawa.nvim",
   lazy = false,
   priority = 1000,
+} 
+
+M.opts = function()
   opts = {
     compile = true,
-    undercurl = true,          -- enable undercurls
+    undercurl = true,          
     commentStyle = { italic = true },
     functionStyle = {},
     keywordStyle = { italic = true},
@@ -19,8 +21,11 @@ return {
       theme = { wave = {}, lotus = {}, dragon = {}, all = {} },
     },
     theme = "dragon",         
-  },
-  config = function()
-    vim.cmd.colorscheme "kanagawa-dragon"
-  end,
-} 
+  }
+end
+
+M.config = function()
+  vim.cmd.colorscheme "kanagawa-dragon"
+end
+
+return M 

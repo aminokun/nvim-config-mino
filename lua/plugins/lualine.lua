@@ -1,11 +1,15 @@
-return{
-    'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
-    config = function()
-      require("lualine").setup({
-        options = {
-          theme = 'horizon',
-        }
-      })
-    end,
-} 
+local M = {
+  'nvim-lualine/lualine.nvim',
+  dependencies = { 'nvim-tree/nvim-web-devicons' },
+}
+
+
+M.opts = function()
+   return {
+      options = {
+        theme = 'horizon',
+      }
+    }
+end
+
+return M

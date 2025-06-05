@@ -1,7 +1,7 @@
-return {
-  --gruvbox colorscheme
+local M = {
   'datsfilipe/gruvbox.nvim' 
- -- config = function()
- --   vim.cmd.colorscheme "gruvbox"
- -- end
 }
+-- M.opts = function()
+--   vim.cmd.colorscheme "gruvbox"
+-- end
+return M
